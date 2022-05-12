@@ -11,8 +11,17 @@ html, body{
 main{
     padding-bottom: 40px;
 }
-footer{
+header, footer{
+    background-color: aliceblue;
     color: palevioletred;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    text-transform: uppercase;
+}
+footer{
     bottom: 0;
     position: absolute;
+    width: 100%;
 }
+/* positiong fixed on footer will make the footer float across the page and cover content
