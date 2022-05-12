@@ -1,4 +1,9 @@
-body{
+html, body{
     font-family: sans-serif;
     background: pink;
+    margin: 0;
+    height: 100%;
+}
+.container{
+    min-height: 100%;
 }
