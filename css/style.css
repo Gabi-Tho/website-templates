@@ -19,9 +19,27 @@ header, footer{
     padding: 1em 0;
     text-transform: uppercase;
 }
-footer{
+footer{/* positiong fixed on footer will make the footer float across the page and cover content */
     bottom: 0;
     position: absolute;
     width: 100%;
 }
-/* positiong fixed on footer will make the footer float across the page and cover content
+
+nav{
+    display: flex;
+    flex-flow: row wrap;  /* change this to column wrap if you want for responsive mobile*/
+}
+nav a{
+    text-decoration: none;
+    padding: 1em;
+    text-transform: uppercase;
+    color: palevioletred;
+}
+nav a:hover{
+    background-color: aliceblue;
+    color: palevioletred;
+}
+nav a:active{/* active class has to be inserted into <a> element */
+    background-color: aliceblue;
+    color: palevioletred;
+}
