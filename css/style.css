@@ -43,3 +43,18 @@ nav a:active{/* active class has to be inserted into <a> element */
     background-color: aliceblue;
     color: palevioletred;
 }
+main{
+    display: flex;
+    gap: 15px 20px;
+    flex-flow: row wrap; /* if not using wrap you could break your code */
+    padding-bottom: 30px;
+}
+.aside{
+    flex: 1; /* takes up 1 row-space because flex-flow is definied as row-wrap */
+    padding: 1em ;
+}
+.section{
+    flex: 4; /* takes up 4 row-space because flex-flow is definied as row-wrap */
+    text-align: justify;
+    padding: 1em ;
+}
