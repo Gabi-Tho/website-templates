@@ -16,13 +16,17 @@ header, footer{
     color: palevioletred;
     width: 100%;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em;
     text-transform: uppercase;
 }
 footer{/* positiong fixed on footer will make the footer float across the page and cover content */
     bottom: 0;
     position: absolute;
     width: 100%;
+    padding: 1em;
+}
+*{
+    box-sizing: border-box;
 }
 
 nav{
@@ -57,4 +61,18 @@ main{
     flex: 4; /* takes up 4 row-space because flex-flow is definied as row-wrap */
     text-align: justify;
     padding: 1em ;
+}
+
+@media screen and (max-width:720px) {
+    header{
+        display: none;
+    }
+    nav{
+        flex-flow: column wrap;
+        text-align: center;
+    }
+.aside{
+        order: 1;
+        flex: 100%;
+    }
 }
